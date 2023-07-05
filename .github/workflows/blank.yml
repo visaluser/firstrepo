@@ -44,4 +44,9 @@ jobs:
           # Replace the following commands with your deployment commands
           echo "Deploying to production environment..."
           # Your deployment commands here
+          - name: Checkout repository
+  uses: actions/checkout@v2
+  with:
+    fetch-depth: 0
+
 
