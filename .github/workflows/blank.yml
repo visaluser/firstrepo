@@ -9,10 +9,10 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
       - name: Install libraries
-        run: pip install -r requirments.txt -t .
-        
- test:
-   runs-on ubuntu-latest
-   needs: build
-   steps:
-   ...
+        run: pip install -r requirements.txt -t .
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    ...
